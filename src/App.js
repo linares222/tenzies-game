@@ -80,7 +80,7 @@ console.log("rendered")
      <main>
         <p class="highscoreDiv">Best score: {bestScore}</p>
       <div className='Text'>
-        <h1 onClick={bestScore}>Tenzies</h1>
+        <h1 onClick={highscore}>Tenzies</h1>
         <p>Number of plays: <span class="nrofplays">{nrOfPlays}</span></p>
       </div>
       <div className='dices'>
