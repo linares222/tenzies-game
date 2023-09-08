@@ -43,6 +43,9 @@ console.log("rendered")
     }))
   }
 
+  function highscore(){
+    setBestScore(prev=>prev)
+  } 
   React.useEffect(() => {
     const freezedNumbers = dicesArray
     .filter((dice) => dice.isFreezed)
@@ -77,7 +80,7 @@ console.log("rendered")
      <main>
         <p class="highscoreDiv">Best score: {bestScore}</p>
       <div className='Text'>
-        <h1>Tenzies</h1>
+        <h1 onClick={bestScore}>Tenzies</h1>
         <p>Number of plays: <span class="nrofplays">{nrOfPlays}</span></p>
       </div>
       <div className='dices'>
