@@ -1,13 +1,103 @@
-body {
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
+html{
+  font-family: karla;
+  height: 100vh;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: #2B283A;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.Text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  text-align: center;
+}
+.Text h1{
+  font-size: 2.6rem;
+}
+.Text p{
+  font-size: 1.3rem;
+}
+main{
+  background-color: #F5F5F5;
+  width: 800px;
+  height: 600px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap:50px;
+  align-items: center;
+  padding: 5% 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.dices{
+  width: 80%;
+  height: 60%;
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.nrofplays{
+  font-weight: bold;
+}
+.windiv{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+.unfreezed, .freezed{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.unfreezed h1, .freezed h1{
+font-size: 2.5rem;
+}
+.unfreezed{
+  background-color: white;
+}
+.freezed{
+  background-color: #59E391;
+}
+.button{
+  color: white;
+  width: 20%;
+  height: 15%;
+  display: flex;
+  background-color: #5035FF;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.button:hover{
+  cursor: pointer;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.highscoreDiv{
+width: 90%;
+font-size: 1.3rem;
+display: flex;
+justify-content: flex-end;
+}
+.highscore{
+  font-weight: bold;
 }
